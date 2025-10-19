@@ -48,6 +48,8 @@ mcm_game_ai/
 
 ├── config.py
 
+├── requirment.txt
+
 ├── analyze_logs.py
 
 ├── forevr_train.py
@@ -96,7 +98,13 @@ This guide walks you through setting up the environment and running the key scri
 
 ### 2. 📦 Install Dependencies
 
-#### clone the repo
+#### 1.install dependencies
 ```bash
 git clone https://github.com/Jincan_LI_HUB/mcm-game-ai.git
 cd mcm-game-ai
+
+#### 2.Run training
+python train_marl.py
+
+#### 3.analyze results
+python analysis/answer_q2.py
