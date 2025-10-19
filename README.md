@@ -123,6 +123,18 @@ yet to be finished！！！！
 ```
 
 # NOTE!
+---
 ```markdown
 > ⚠️ Note: If you use `gnn_model.py`, please install PyTorch Geometric separately. See: https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 ```
+
+#### ⚠️ Limitations
+---
+While our reinforcement learning approach achieves strong performance, we acknowledge the following limitations:
+
+- **Training Time**: The model requires thousands of episodes to converge, which may be computationally expensive on CPU-only machines.
+- **Local Optima**: The policy may converge to suboptimal strategies due to reward shaping bias (e.g., overvaluing high immediate scores like 100).
+- **Generalization**: The strategy is learned for the 1–100 game; performance may degrade on different number ranges without retraining.
+- **GNN Complexity**: The graph neural network (`gnn_model.py`) is optional and may be difficult to install due to dependency conflicts.
+
+We welcome contributions to improve scalability and robustness.
