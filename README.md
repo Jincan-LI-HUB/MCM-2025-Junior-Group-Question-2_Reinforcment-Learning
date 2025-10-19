@@ -1,5 +1,6 @@
 # MCM-2025-Junior-Group-Question-2_Reinforcment-Learning
 ##1.this file are structured as below:
+---
 mcm_game_ai/
 
 ├── core/
@@ -56,9 +57,10 @@ mcm_game_ai/
 
 └── README.md
 
+---
+
 ##2.Here is a brief description of the main scripts in the repository:
-
-
+---
 train_marl.py
 **Multi-Agent Reinforcement Learning Trainer**
 
@@ -66,7 +68,7 @@ Trains Alice and Bob (two neural agents) through self-play in the competitive 1-
 
 Key features: Action masking for valid moves, MLP policy network, Adam optimizer.
 
-
+---
 analysis/answer_q2.py
 **Strategy Analysis & Performance Evaluation**
 
@@ -74,27 +76,26 @@ Analyzes trained policies and extracts key insights for Question 2. Computes Ali
 
 Ideal for generating data to support claims about strategic behavior.
 
-
+---
 forever_train.py
 **Long-Term Policy Evolution & Robustness Training**
 
 Extends training over many iterations with periodic evaluation and policy saving. Designed for long-horizon refinement and stability testing. Logs performance every 500 episodes and saves best models, enabling analysis of learning progression and strategy convergence.
 
+---
 **Tip:** Run train_marl.py first to get initial policies, then use answer_q2.py for analysis. Use forever_train.py for extended training and robustness validation.
 
+---
 
 ##3. 🚀 How to Run This Project
-
-This guide walks you through setting up the environment and running the key scripts. All code is written in Python.
-
 ---
+This guide walks you through setting up the environment and running the key scripts. All code is written in Python.
 
 ### 1. 🛠️ Prerequisites
 
 - **Python 3.8 or higher**
 - (Optional) **CUDA-enabled GPU** for faster training (but CPU is supported)
 
----
 
 ### 2. 📦 Install Dependencies
 
@@ -102,9 +103,26 @@ This guide walks you through setting up the environment and running the key scri
 ```bash
 git clone https://github.com/Jincan_LI_HUB/mcm-game-ai.git
 cd mcm-game-ai
-
+```
+install the required packages:
+```bash
+pip install -r requirements.txt
+```
 #### 2.Run training
+```bash
 python train_marl.py
-
+```
 #### 3.analyze results
+```bash
 python analysis/answer_q2.py
+```
+
+# 4.Final Answer for Q2
+```text
+yet to be finished！！！！
+```
+
+# NOTE!
+```markdown
+> ⚠️ Note: If you use `gnn_model.py`, please install PyTorch Geometric separately. See: https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+```
